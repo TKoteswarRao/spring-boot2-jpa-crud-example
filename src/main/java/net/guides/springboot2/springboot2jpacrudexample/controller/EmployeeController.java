@@ -26,6 +26,11 @@ import net.guides.springboot2.springboot2jpacrudexample.repository.EmployeeRepos
 public class EmployeeController {
 	@Autowired
 	private EmployeeRepository employeeRepository;
+	
+	@GetMapping
+	public String getAllEmployees() {
+		return "Welcome to Employee module";
+	}
 
 	@GetMapping("/employees")
 	public List<Employee> getAllEmployees() {
