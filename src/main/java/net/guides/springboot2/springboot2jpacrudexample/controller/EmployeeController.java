@@ -28,7 +28,7 @@ public class EmployeeController {
 	private EmployeeRepository employeeRepository;
 	
 	@GetMapping
-	public String getAllEmployees() {
+	public String employees() {
 		return "Welcome to Employee module";
 	}
 
